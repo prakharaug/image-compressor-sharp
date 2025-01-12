@@ -1,0 +1,5 @@
+node_modules/
+_Compressed_Images/
+_Original_Images/
+*.xlsx
+.env
