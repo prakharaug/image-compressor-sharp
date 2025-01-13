@@ -12,7 +12,7 @@ const dbx = new Dropbox({ accessToken: ACCESS_TOKEN });
 // Function to upload a file to Dropbox
 async function uploadFile(filePath) {
     const fileName = path.basename(filePath);
-    const dropboxPath = `/2024 10 09/${fileName}`;
+    const dropboxPath = `/2025 01 13 02/${fileName}`;
 
     try {
         const fileContent = fs.readFileSync(filePath);
@@ -92,7 +92,7 @@ async function uploadImagesAndGenerateLinks(folderPath) {
 }
 
 // Define the folder containing images
-const imagesFolder = '_Original_Images/Q8';
+const imagesFolder = '_Original_Images';
 
 // Execute the main function
 uploadImagesAndGenerateLinks(imagesFolder);
