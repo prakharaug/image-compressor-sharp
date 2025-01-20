@@ -12,7 +12,7 @@ const dbx = new Dropbox({ accessToken: ACCESS_TOKEN });
 // Function to upload a file to Dropbox
 async function uploadFile(filePath) {
     const fileName = path.basename(filePath);
-    const dropboxPath = `/2025 01 13 02/${fileName}`;
+    const dropboxPath = `/2025 01 20/${fileName}`;
 
     try {
         const fileContent = fs.readFileSync(filePath);
